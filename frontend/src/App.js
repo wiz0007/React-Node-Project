@@ -3,6 +3,7 @@ import { PipelineUI } from './ui';
 import { SubmitButton } from './submit';
 import './styles/forms.css';
 
+// This is an assessment project
 
 function App() {
   return (
