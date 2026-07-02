@@ -1,4 +1,5 @@
 import { useStore } from './store';
+import { API_BASE_URL } from './config';
 
 export const SubmitButton = () => {
   const { nodes, edges } = useStore((state) => ({
@@ -9,7 +10,7 @@ export const SubmitButton = () => {
   const handleSubmit = async () => {
     try {
       const response = await fetch(
-        'http://localhost:8000/pipelines/parse',
+        `${API_BASE_URL}/pipelines/parse`,
         {
           method: 'POST',
           headers: {
